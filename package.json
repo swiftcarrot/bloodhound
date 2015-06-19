@@ -1,0 +1,31 @@
+{
+  "name": "node-bloodhound",
+  "version": "1.0.0",
+  "description": "bloodhound.js in node",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wang Zuo",
+  "license": "MIT",
+  "dependencies": {
+    "object-assign": "^3.0.0",
+    "promise": "^7.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pqx/node-bloodhound.git"
+  },
+  "keywords": [
+    "node",
+    "bloodhound",
+    "search",
+    "index"
+  ],
+  "bugs": {
+    "url": "https://github.com/pqx/node-bloodhound/issues"
+  },
+  "homepage": "https://github.com/pqx/node-bloodhound#readme"
+}
