@@ -12,8 +12,8 @@ describe('options parser', function() {
 
   function prefetch(o) {
     return oParser({
-      datumTokenizer: $.noop,
-      queryTokenizer: $.noop,
+      datumTokenizer: _.noop,
+      queryTokenizer: _.noop,
       prefetch: _.mixin({
         url: '/example'
       }, o || {})
@@ -22,8 +22,8 @@ describe('options parser', function() {
 
   function remote(o) {
     return oParser({
-      datumTokenizer: $.noop,
-      queryTokenizer: $.noop,
+      datumTokenizer: _.noop,
+      queryTokenizer: _.noop,
       remote: _.mixin({
         url: '/example'
       }, o || {})
@@ -97,10 +97,10 @@ describe('options parser', function() {
       expect(o.prefetch.cacheKey).toBe(o.prefetch.url);
     });
 
-    it('should default transport to jQuery.ajax', function() {
-      var o = prefetch();
-      expect(o.prefetch.transport).toBe($.ajax);
-    });
+    // it('should default transport to jQuery.ajax', function() {
+    //   var o = prefetch();
+    //   expect(o.prefetch.transport).toBe($.ajax);
+    // });
 
     it('should prepend verison to thumbprint', function() {
       var o = prefetch();

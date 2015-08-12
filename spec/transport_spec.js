@@ -1,3 +1,5 @@
+var Transport = require('../lib/transport');
+
 describe('Transport', function() {
 
   beforeEach(function() {
