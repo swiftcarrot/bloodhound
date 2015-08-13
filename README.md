@@ -1,14 +1,16 @@
 # node-bloodhound
-[bloodhound.js](https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md) in node
+[bloodhound.js](https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md) in node and browser (`browserify`)
 
-- [ ] bloodhound.js
-- [x] lru_cache.js
-- [ ] options_parser.js
-- [ ] persistent_storage.js
-- [ ] prefetch.js
-- [ ] remote.js
-- [ ] search_index.js
-- [ ] tokenizers.js
-- [ ] transport.js
-- [ ] utils.js
-- [ ] version.js (fingerprint fix)
+### Installtion
+``` sh
+npm install node-bloodhound --save
+```
+### Changes
++ no jquery deps
++ works with both browser and node
++ jquery deferred with [es6-promise](https://www.npmjs.com/package/es6-promise)
++ storage polyfill with [storage2](https://www.npmjs.com/package/storage2)
++ ajax with [superagent](https://www.npmjs.com/package/superagent)
+
+### License
+MIT
