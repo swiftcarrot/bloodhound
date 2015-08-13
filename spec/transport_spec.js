@@ -1,6 +1,5 @@
-var Transport = require('../lib/transport');
-
 describe('Transport', function() {
+  var Transport = require('../lib/transport');
 
   beforeEach(function() {
     jasmine.Ajax.useMock();
@@ -22,17 +21,17 @@ describe('Transport', function() {
     }
   });
 
-  it('should use jQuery.ajax as the default transport mechanism', function() {
-    var req, resp = fixtures.ajaxResps.ok, spy = jasmine.createSpy();
+  // it('should use jQuery.ajax as the default transport mechanism', function() {
+  //   var req, resp = fixtures.ajaxResps.ok, spy = jasmine.createSpy();
 
-    this.transport.get('/test', spy);
+  //   this.transport.get('/test', spy);
 
-    req = mostRecentAjaxRequest();
-    req.response(resp);
+  //   req = mostRecentAjaxRequest();
+  //   req.response(resp);
 
-    expect(req.url).toBe('/test');
-    expect(spy).toHaveBeenCalledWith(null, resp.parsed);
-  });
+  //   expect(req.url).toBe('/test');
+  //   expect(spy).toHaveBeenCalledWith(null, resp.parsed);
+  // });
 
   it('should respect maxPendingRequests configuration', function() {
     for (var i = 0; i < 10; i++) {

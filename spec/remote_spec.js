@@ -1,7 +1,8 @@
 describe('Remote', function() {
+  var Remote = require('../lib/remote');
 
   beforeEach(function() {
-    jasmine.Transport.useMock();
+    // jasmine.Transport.useMock();
 
     this.remote = new Remote({
       url: '/test?q=%QUERY',

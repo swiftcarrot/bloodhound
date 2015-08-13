@@ -2,13 +2,13 @@ describe('PersistentStorage', function() {
   var engine, ls;
 
   // test suite is dependent on localStorage being available
-  if (!window.localStorage) {
-    console.warn('no localStorage support – skipping PersistentStorage suite');
-    return;
-  }
+  // if (!window.localStorage) {
+  //   console.warn('no localStorage support – skipping PersistentStorage suite');
+  //   return;
+  // }
 
-  // for good measure!
-  localStorage.clear();
+  // // for good measure!
+  // localStorage.clear();
 
   beforeEach(function() {
     ls = {

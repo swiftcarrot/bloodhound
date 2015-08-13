@@ -1,8 +1,8 @@
-var _ = require('../lib/utils');
-var Bloodhound = require('../');
-var SearchIndex = require('../lib/search_index');
-
 describe('SearchIndex', function() {
+  var _ = require('../lib/utils');
+  var Bloodhound = require('../');
+  var SearchIndex = require('../lib/search_index');
+  var fixtures = require('./fixtures');
 
   function build(o) {
     return new SearchIndex(_.mixin({

@@ -6,3 +6,15 @@ var engine = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.whitespace
 });
 
+
+var promise = engine.initialize();
+
+promise.then(function() {
+  console.log('engine init done');
+
+  engine.search('d', function(d) {
+    console.log(d);
+  }, function(d) {
+    console.log(d);
+  });
+});

@@ -10,8 +10,8 @@
   "author": "Wang Zuo",
   "license": "MIT",
   "dependencies": {
+    "es6-promise": "^3.0.2",
     "object-assign": "^3.0.0",
-    "promise": "^7.0.3",
     "storage2": "0.0.1",
     "superagent": "^1.2.0"
   },

@@ -1,6 +1,6 @@
-var LruCache = require('../lib/lru_cache');
 
 describe('LruCache', function() {
+  var LruCache = require('../lib/lru_cache');
 
   beforeEach(function() {
     this.cache = new LruCache(3);
