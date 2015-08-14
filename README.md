@@ -1,9 +1,9 @@
-# node-bloodhound
-[bloodhound.js](https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md) in node and browser (`browserify`)
+# bloodhound-js
+[bloodhound.js](https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md) for node and browser
 
 ### Installtion
 ``` sh
-npm install node-bloodhound --save
+npm install bloodhound-js --save
 ```
 ### Changes
 + no jquery deps

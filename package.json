@@ -1,7 +1,7 @@
 {
-  "name": "node-bloodhound",
-  "version": "1.1.0",
-  "description": "bloodhound.js in node",
+  "name": "bloodhound-js",
+  "version": "1.0.0",
+  "description": "bloodhound.js for node and browser",
   "main": "index.js",
   "scripts": {
     "build": "browserify index.js -o client.js",
@@ -18,18 +18,18 @@
   "devDependencies": {
     "jasmine": "^2.3.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pqx/node-bloodhound.git"
-  },
   "keywords": [
     "bloodhound",
     "index",
     "node",
     "search"
   ],
-  "bugs": {
-    "url": "https://github.com/pqx/node-bloodhound/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pqx/bloodhound.git"
   },
-  "homepage": "https://github.com/pqx/node-bloodhound#readme"
+  "bugs": {
+    "url": "https://github.com/pqx/bloodhound/issues"
+  },
+  "homepage": "https://github.com/pqx/bloodhound#readme"
 }
