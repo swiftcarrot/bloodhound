@@ -1,11 +1,11 @@
 {
   "name": "bloodhound-js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "bloodhound.js for node and browser",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server -c --port=7788",
     "build": "webpack -p",
+    "start": "webpack-dev-server -c --port=7788",
     "test": "./node_modules/jasmine/bin/jasmine.js"
   },
   "author": "Wang Zuo",
@@ -13,7 +13,7 @@
   "dependencies": {
     "es6-promise": "^3.0.2",
     "object-assign": "^3.0.0",
-    "storage2": "0.0.1",
+    "storage2": "0.0.2",
     "superagent": "^1.2.0"
   },
   "devDependencies": {
