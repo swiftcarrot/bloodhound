@@ -4,7 +4,8 @@
   "description": "bloodhound.js for node and browser",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js -o client.js",
+    "start": "webpack-dev-server -c --port=7788",
+    "build": "webpack -p",
     "test": "./node_modules/jasmine/bin/jasmine.js"
   },
   "author": "Wang Zuo",
