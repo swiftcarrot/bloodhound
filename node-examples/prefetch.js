@@ -11,7 +11,7 @@ var promise = countries.initialize();
 promise.then(function() {
   console.log('engine init done');
 
-  countries.search('a', function(d) {
+  countries.search('south', function(d) {
     console.log(d);
   }, function(d) {
     console.log(d)
