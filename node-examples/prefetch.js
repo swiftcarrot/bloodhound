@@ -11,9 +11,11 @@ var promise = countries.initialize();
 promise.then(function() {
   console.log('engine init done');
 
-  engine.search('a', function(d) {
+  countries.search('a', function(d) {
     console.log(d);
   }, function(d) {
     console.log(d)
   });
+}, function(err) {
+  console.log(err);
 });
