@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node_modules/.bin/webpack -p",
     "start": "./node_modules/.bin/webpack-dev-server -c --port=7788",
-    "test": "./node_modules/jasmine/bin/jasmine.js"
+    "test": "./node_modules/.bin/tape tests/*.js"
   },
   "author": "Wang Zuo",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "superagent": "^1.2.0"
   },
   "devDependencies": {
-    "jasmine": "^2.3.1",
+    "tape": "^4.2.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
