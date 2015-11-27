@@ -1,4 +1,4 @@
-var tape = require('test');
+var test = require('tape');
 var Bloodhound = require('../');
 
 test('prefetch remote example', function(t) {
