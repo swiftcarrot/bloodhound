@@ -1,7 +1,7 @@
 module.exports = {
   entry: './index.js',
   output: {
-    path: __dirname,
+    path: __dirname + '/dist',
     filename: 'bloodhound.min.js',
     library: 'Bloodhound'
   },
