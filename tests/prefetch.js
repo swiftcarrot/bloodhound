@@ -2,6 +2,7 @@ var test = require('tape');
 var Bloodhound = require('../');
 
 test('prefetch remote example', function(t) {
+  t.plan(1)
   var countries = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
@@ -11,10 +12,9 @@ test('prefetch remote example', function(t) {
   var promise = countries.initialize();
 
   promise.then(function() {
-    countries.search('south', function(d) {
-      console.log(d);
+    countries.search('norw', function(d) {
+      t.deepEqual(d, ['Norway']);
     }, function(d) {
-      console.log(d)
     });
   }, function(err) {
     console.log(err);

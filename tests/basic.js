@@ -1,7 +1,7 @@
 var test = require('tape');
 var Bloodhound = require('../');
-
 test('basic usage', function(t) {
+  t.plan(1)
   var engine = new Bloodhound({
     local: ['dog', 'pig', 'moose'],
     queryTokenizer: Bloodhound.tokenizers.whitespace,
