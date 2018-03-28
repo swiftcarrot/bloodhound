@@ -14,7 +14,7 @@
     "es6-promise": "^3.0.2",
     "object-assign": "^4.0.1",
     "storage2": "^0.1.0",
-    "superagent": "^1.2.0"
+    "superagent": "^3.8.2"
   },
   "devDependencies": {
     "tape": "^4.2.2",
